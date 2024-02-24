@@ -45,7 +45,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     # Send DATA command and handle server response.
     # Fill in start
-    Data = b'Data\r\n'
+    Data = b'DATA\r\n'
     clientSocket.send(Data)
     recv4 = clientSocket.recv(1024).decode()
     # print(recv4)
